@@ -50,13 +50,13 @@ int main()
 {
     char operation;
     cout << "Calculator Menu:" << endl;
-    cout << "1. Addition (+)" << endl;
-    cout << "2. Subtraction (-)" << endl;
-    cout << "3. Multiplication (*)" << endl;
-    cout << "4. Division (/)" << endl;
-    cout << "5. Sine (sin)" << endl;
-    cout << "6. Cosine (cos)" << endl;
-    cout << "7. Exponential (exp)" << endl;
+    cout << "1. Addition " << endl;
+    cout << "2. Subtraction " << endl;
+    cout << "3. Multiplication " << endl;
+    cout << "4. Division " << endl;
+    cout << "5. Sine " << endl;
+    cout << "6. Cosine " << endl;
+    cout << "7. Exponential " << endl;
     cout << "Enter the operation: ";
     cin >> operation;
     double num1, num2;
@@ -97,9 +97,9 @@ int main()
     } 
     else if (operation == '6') 
     {
-        cout << "Enter angle in radians: ";
+        cout << "Enter angle in degrees: ";
         cin >> num1;
-        cout << "Result: " << cosine(num1) << endl;
+        cout << "Result: " << cosine(num1*0.0174533) << endl;
     } 
     else if (operation == '7') 
     {
